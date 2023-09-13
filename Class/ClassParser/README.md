@@ -100,3 +100,6 @@ Refer to the example class in the file ../test.py .
 It looks like this. Although the indentation may be different, it is not important for us.
 
     [['Hello', 'function', []], ['Sound', 'function', []], ['a', 'class', [('a1_1', <class '__main__.TestClass.a.a1_1'>), ('a1_func1', <function               TestClass.a.a1_func1 at 0x0000024ED44E4CC0>)]], ['a1_1', 'class', [('a1_1_func1', <function TestClass.a.a1_1.a1_1_func1 at 0x0000024ED44E4E00>),           ('a1_1_func2', <function TestClass.a.a1_1.a1_1_func2 at 0x0000024ED44E4EA0>)]], ['a1_1_func1', 'function', []], ['a1_1_func2', 'function', []],            ['a1_func1', 'function', []]]
+
+## Known Issues
+1. Child-And-Descendant of a func is NOT listed currently.
