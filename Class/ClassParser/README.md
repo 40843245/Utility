@@ -149,4 +149,7 @@ Notice that
 3. result = None , firstTime = True is dummy and useless. (I will remove it in future version.)
 
 ## Release Notes
-### 2023/09/13 11:52 a.m.
+### 2023/09/13 11:52
+Initial Notes
+### 2023/09/13 12:13
+Fix the time of Release Notes.
