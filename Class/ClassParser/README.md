@@ -146,3 +146,7 @@ Notice that
 ## Known Issues
 1. Child-And-Descendant of a func is NOT listed currently.
 2. NOT implement the argument searchMode = VISIT_DEPTH_1 .
+3. result = None , firstTime = True is dummy and useless. (I will remove it in future version.)
+
+## Release Notes
+### 2023/09/13 11:52 a.m.
