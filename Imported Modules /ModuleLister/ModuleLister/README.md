@@ -3,7 +3,8 @@
     
     1.  List all used moudules with specified file
 ## Example 
-Shown in __name__ == '__main__' ModuleLister.py  
+    
+    Shown in __name__ == '__main__' block in file ModuleLister.py .
 ## Used Modules
 
     modulefinder (built-in)
