@@ -7,5 +7,8 @@
 The 1th and 2th points of known issue in ../ClassParser/README.md .
 
 ## Release Notes
-### 2023/09/13 12:00 a.m.
+### 2023/09/13 12:00
+Initial notes.
+### 2023/09/13 12:12 
+Fix the time of Release Notes.
 
