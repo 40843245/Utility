@@ -22,10 +22,15 @@
 
     modulefinder (built-in)
 ## Ref 
-Thanks to the author in stackoverflow, I learned extra info other than usage of modulefinder.
+Thanks to the author joaquin in stackoverflow, I learned extra info other than usage of modulefinder.
+
+![image](https://github.com/40843245/Utility/assets/75050655/a9eb1084-1298-415b-94ca-725ea830fc49)
 
 https://stackoverflow.com/questions/2875232/list-python-package-dependencies-without-loading-them
 
 ## Release Notes
 ### 2023/09/13 23:00
 Initial Notes
+### 2023/09/13 23:17 
+Added
+    Link about reference to Ref section. (It does NOT exist at initial notes).
