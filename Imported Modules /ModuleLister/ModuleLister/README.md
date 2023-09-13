@@ -2,6 +2,8 @@
 ## Objectives
     
     1.  List all used moudules with specified file
+## Example 
+Shown in __name__ == '__main__' ModuleLister.py  
 ## Used Modules
 
     modulefinder (built-in)
