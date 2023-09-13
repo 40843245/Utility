@@ -24,7 +24,7 @@
 ## Ref 
 Thanks to the author in stackoverflow, I learned extra info other than usage of modulefinder.
 
-https://stackoverflow.com/questions/2875232/list-python-package-dependencies-without-loading-them)https://stackoverflow.com/questions/2875232/list-python-package-dependencies-without-loading-them
+https://stackoverflow.com/questions/2875232/list-python-package-dependencies-without-loading-them
 
 ## Release Notes
 ### 2023/09/13 23:00
