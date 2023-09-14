@@ -183,6 +183,7 @@ class ClassFuncParser:
                     else:
                         stack1.pop(0)
                 return result
+            case RecursiveModeEnum.VISIT_DEPTH_1:
                 result = list()
                 stack1 = list(currentMember)
                 while True:
