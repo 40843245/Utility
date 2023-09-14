@@ -5,7 +5,10 @@
    Instead of listing all members of the specified class which are defined at top (for convenience, we call it as top-level class of the module.) .
    It can list all members of specified class (including nested class).
 
-   I have tried <b>top-level class</b> and <b>nested class</b> which is defined as a child in class, ensuring that they are NO bugs.
+   I have tried <b>nested class</b> which is defined as a child in class, ensuring that they are NO bugs.
    
-    
 ### Added
+
+## Known issues
+
+1. Get unexpected result 
