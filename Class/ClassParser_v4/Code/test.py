@@ -26,8 +26,5 @@ class TestClass:
 
 if __name__ == '__main__':
     r = ClassFuncParser.GetMemberTree(target = "TestClass.a", availables = globals(), searchMode = RecursiveModeEnum.NONRECURSIVE_ALL)
-
-    # Bug
-    # r = ClassFuncParser.GetMemberTree(target = "TestClass.a", availables = globals(), searchMode = RecursiveModeEnum.NONRECURSIVE_ALL)
     print("result:")
     print(r)
