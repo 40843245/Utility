@@ -10,7 +10,10 @@ Sorry for put it in the gray block. I would NOT like to do so, but it will NOT d
 I combine a whitespace, the double dash and then a whitespace in other place than gray block. I am a little forced to do so.
 
 #### Expected Output
+It should like this. The format of output may be different. I also omit some item with the symbol ... . 
 
+                  result:
+                  [ [('TestClass', <class '__main__.TestClass'>),[ [('Hello',<function TestClass.Hello at 0x0000000000>)],[('Sound',<function TestClass.Sound at 0x000000000000>), ...] ,['a', [('a1_1', <class '__main__.TestClass.a.a1_1'>), ('a1_func1', <function TestClass.a.a1_func1 at 0x0000021FB45420C0>)]], ['a1_1', [('a1_1_func1', <function TestClass.a.a1_1.a1_1_func1 at 0x0000021FB4542200>), ('a1_1_func2', <function TestClass.a.a1_1.a1_1_func2 at 0x0000021FB45422A0>)]]]]]
 #### Output
 A runtime error occured.
          
