@@ -30,3 +30,7 @@ A runtime error occured.
 ## Known issues
 1. Get unexpected result on top-level class
    For more details, see Examples section.
+
+## Release Notes
+### 2023/09/14 14:52 
+Initial Notes
