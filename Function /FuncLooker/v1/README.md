@@ -24,6 +24,10 @@
       Please download it from  ../FuncChecker/v1/Code/FuncChecker.py (where v1 is the 1th version, I may update it in the future. Please pay attention on it.)
       Then import the module with the keyword import before use. Such as
             from FuncChecker import FuncChecker    
+## Known issues
+A runtime error occured -- ValueError while running inspect.signature(func) when the parameters are some keywords for basic type such as bool, int, str, dict.
+
+      ValueError: no signature found for builtin type <class 'dict'>
       
 ## Used Modules
       1. inspect
@@ -31,3 +35,7 @@
 ## Release Notes
 ### 2023/09/16 20:44
 initial Notes
+### 2023/09/16 21:05
+Added
+       
+      Known issues
