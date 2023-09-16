@@ -25,9 +25,13 @@
       Then import the module with the keyword import before use. Such as
             from FuncChecker import FuncChecker    
 ## Known issues
-A runtime error occured -- ValueError while running inspect.signature(func) when the parameters are some keywords for basic type such as bool, int, str, dict.
+A runtime error occured -- ValueError while running inspect.signature(func) when the parameters are some keywords for basic type such as bool, int, str, dict. It will looks like this.
 
       ValueError: no signature found for builtin type <class 'dict'>
+
+But I can ensure that there are no error with keywords 
+
+      float, list, tuple.
       
 ## Used Modules
       1. inspect
