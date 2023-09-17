@@ -383,7 +383,6 @@ class FileTableViewer(
         tableWH.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         tableWH.tableView.setColumnWidth(column,pos.width()//column)
         
-        selectedList = [ [ True for co in range(0,column,1)] for ro in range(0,row,1)  ]
         tableWidgetItemHandlerList = []
         tableWidgetItemHandlerSublist = []
         for ro in range(0,row,1):
@@ -407,6 +406,7 @@ class FileTableViewer(
                     co,
                     tableWidgetItemHandlerList[ro][co].item
                 )
+                
         tableWH.tableView.setSelectionMode(QAbstractItemView.SingleSelection)
         tableWH.tableView.setSelectionBehavior(QAbstractItemView.SelectRows)
         tableWH.tableView.clicked.connect( 
@@ -435,33 +435,28 @@ class FileTableViewer(
                     tempTuple
             )
             resultList.append( tempList )
-        print(resultList)
-        
-        
-                    
         
         allChildren = mainWindow.findChildren(QWidget)
         
         allChildrenExceptQTableWidget =  [
             elem for elem in allChildren if( isinstance( elem , QTableWidget ) == False) 
         ] 
-        allChildrenExceptQTableWidgetName = [
-            elem.objectName() for elem in allChildrenExceptQTableWidget
-        ]
-        allChildrenExceptQTableWidgetId = [
-            id(elem) for elem in allChildrenExceptQTableWidget
-        ]
+
+        ## Do it for all QtWidget object except QTableWidget object and it's inherited object.
         for elem in allChildrenExceptQTableWidget :
+            ## Add a lambda func as callback event after mouse press of the elem
             elem.mousePressEvent = lambda event : (
                  DeselectAll(
                      tableWH.tableView
                 )    
             )        
         return tableWH
-        
+    
+## Try to deselect the nth QTableView when clicking the QMainWindow just after clicking the nth QTableView.
+
 def DeselectAll(table):
-    print(GetInfo(table))
-    print(GetInfo(table.objectName()))
+    print(GetInfo(table))  
+    print(GetInfo(table.objectName())) ## Get 1th QTableView's name even when clicking QMainWindow object just after 2th QTableView's . 
     for ro in range(0,row,1):
         for co in range(0,column,1):
             item1 = table.item(ro,co)
@@ -470,7 +465,6 @@ def DeselectAll(table):
 def GetInfo(obj) : return [obj,type(obj)]
 
 if __name__ == '__main__':
-    
     
     row = 12
     column = 2
@@ -536,7 +530,7 @@ if __name__ == '__main__':
                 row = row, column = column , pos = fileTableViewerPosList[i] , mainWindow = inst.mainWindow ,
                 tableWH = tableWH 
             )
-        fileTableViewer.tableView.setObjectName("fileTableViewer"+str(i))
+        fileTableViewer.tableView.setObjectName("fileTableViewer"+str(i)) ## Set name of object of QTableView
         fileTableViewerList.append(fileTableViewer)
         
         del (tableWH)
