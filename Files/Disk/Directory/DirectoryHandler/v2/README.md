@@ -1,8 +1,9 @@
 # DirectoryHandler (Handles a directory) (2th version)
-## Objectives
-1. List sub-directories and sub-files in specified string as the current directory.
-2. 
+## Added
+1. Iterate for all elem in specified directory.
 
+For more details, see the 1th version which is located in ../v1 .
+   
 ## API
 ### class DirectoryHandler()
 #### class FileLister()
@@ -28,5 +29,5 @@ The syntax looks like this.
 ## Used Modules
     os (built-in)
 ## Release Notes
-### 2023/09/19 20:37 
+### 2023/09/19 20:51
 initial notes
