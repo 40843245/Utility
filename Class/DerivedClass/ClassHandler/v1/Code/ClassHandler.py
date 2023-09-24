@@ -13,7 +13,7 @@ class BaseClass():
 class DerivedClass():
     pass
 
-class DerivedClassHandler():
+class ClassHandler():
     class AttrHandler():
         @staticmethod
         def Copy(derivedClass,baseClass):
