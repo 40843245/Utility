@@ -1,4 +1,4 @@
-# DocumentHandler (1th versiom)
+# DocumentHandler (1th version)
 ## Objective 
 Manipulate a Microsoft Word file ( .docx , .docx )
 
