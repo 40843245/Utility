@@ -74,6 +74,3 @@ Thus, it is added -- (5, -1, 'd4') .
 ## Release Notes
 ### 2023/10/04 15:47 
 Initial Notes.
-
-
-
