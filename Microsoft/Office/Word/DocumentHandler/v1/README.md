@@ -2,6 +2,8 @@
 ## Objective 
 Manipulate a Microsoft Word file ( .docx , .docx )
 
+(such as replace)
+
 ## API
 ### DocumentHandler
 #### SetInputFile
