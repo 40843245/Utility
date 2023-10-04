@@ -5,6 +5,8 @@
 
 ## API
 ### ExcelsHandler
+Manipulates many excels files by visiting each elem of WorkbookHandler object once.
+
 #### SetInputFullNames
 Set the full path and name of many input files.
 
@@ -82,13 +84,51 @@ A empty list in 2th dimension indicates that there are no matched cells in the w
 
 A empty list in 1th dimension indicates that there are no matched cells in many files.
 
-#### 3D-list
+#### Definition of 3D-list with RE ( regular expression )
 
     # {cell} refers a cell object.
     {1thDimensionalList} := ( \[ \] | \[ {cell} ( ,  {cell})*  \] )
     {2thDimensionalList} := ( \[ \] | \[ {1thDimensionalList} ( ,  {1thDimensionalList})*  \] )
     {3thDimensionalList} := ( \[ \] | \[ {2thDimensionalList} ( ,  {2thDimensionalList})*  \] )
 
-###
+#### Replace
+
+Replace cells which values exactly are searchText into replaceText.
+
+Syntax :
+   
+      Replace(self,searchText:str,replaceText:str):
+
+Parameter:
+
+1. self : Of course, is the instance itself.
+2. searchText : text to be replaced for.
+3. replaceText : text that will be replaced to.
+
+Returned Value
+
+A 2D-like list.
+
+### WorkbookHandler
+Manipulates all worksheets of one file.
+
+#### SetInputFullName
+Set the full path and name of the input file.
+
+Similar to ExcelsHandler.SetInputFullNames . 
+
+Syntax :
+
+      SetInputFullName(self,inputFullName: str)
+
+Parameter :
+1. self : Of course, is the instance itself.
+2. inputFullName : the full path and name of the input file.
+   
+Returned Value :
+
+None
+
+      
 
 
