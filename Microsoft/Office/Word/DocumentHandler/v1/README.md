@@ -1,5 +1,6 @@
 # DocumentHandler (1th versiom)
 ## Objective 
+Manipulate a Microsoft Word file ( .docx , .docx )
 
 ## API
 ### DocumentHandler
@@ -118,6 +119,16 @@ Used attr:
 My own Developement Module:
 
     StringHandler
+
+Other non-builtin module
+      
+      docx : python-docx (To download, pip install python-docx )
+
+### Ref
+Official docs of docx module:
+      
+      https://python-docx.readthedocs.io/en/latest/
+
 ## Release Notes
 ### 2023/10/05 6:49
 Initial Notes
