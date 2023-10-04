@@ -129,6 +129,22 @@ Returned Value :
 
 None
 
+### Replace
+Syntax :
+       
+       Replace(self,searchText:str,replaceText):
+
+Parameter :
+
+Replaces all ocurrences with searchText to replaceText.
+
+Returned Value :
+
+A list of string.
+
+## Release Notes
+### 2023/10/05 6:19
+Initial Notes
       
 
 
