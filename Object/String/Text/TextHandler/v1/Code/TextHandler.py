@@ -1,7 +1,7 @@
 from StringHandler import StringHandler
 class TextHandler():
     @staticmethod
-    def Search(content:str,searchText):
+    def Search(content:str,searchText:str):
         delimList = [ ' ','\n' , '\t' ]
         r = StringHandler.Split(content, delimList)
         resultList = [ (elem1,elem2,elem3) for (elem1,elem2,elem3) in r if elem3 == searchText]
