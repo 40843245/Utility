@@ -25,6 +25,10 @@ Parameter :
 Returned Value :
 Return True iff a given src ends with any elem of given list target. Otherwise, return False.
 
+## Known issue
+Unexpected Output. It should not always return True.
 ## Release Notes
 ### 2023/10/08 6:17
 Initial Notes.
+### 2023/10/08 7:23
+Add Known issues and Fix it in version v2 (in directory ../v2/)
