@@ -8,6 +8,15 @@ Check a given src is the specified file through its extension.
     print(r)
 #### Output
     True
+## Used Module
+My developed module:
+
+    ListHandler 
+    
+ListHandler module at GitHub:
+
+https://github.com/40843245/Utility/blob/main/Object/List/ListFiller/String/v1/Code/ListHandler.py
+
 ## API
 ### class FileHandler()
 #### class FileChecker()
