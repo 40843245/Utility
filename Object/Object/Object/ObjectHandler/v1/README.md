@@ -18,7 +18,7 @@ If expectedType is not one of these:
 
 Rule 3:
 
-If length of src is greater than or equal to expectedLength, then it will not fill anything, thus the returned value is equal to src.
+If length of src is greater than or equal to expectedLength, then it will not fill anything, just convert it to a expectedType-type object.
 
 Rule 4:
 
@@ -47,7 +47,7 @@ For more details, see the following examples.
 ### Output
     [4, 4]
 ### Explanation
-src is passed as None. According to Rule 4, then filling 4 two times, converting it to a list, getting
+src is passed as None. According to Rule 4, 4 will be filled two times, converting it to a list, getting
 
     [4 , 4]
 
@@ -63,7 +63,7 @@ src is passed as None. According to Rule 4, then filling 4 two times, converting
 ### Output
     [1, 4]
 ### Explanation
-According to Rule 4, then fill 4 one time ( expectedLength == 2 and len(src) == 1 => expectedLength -  len(src) ), and combine a list with 1, the resultant. Lastly, converting it to list, getting
+According to Rule 4, fill 4 one time ( expectedLength == 2 and len(src) == 1 => expectedLength -  len(src) == 2 - 1 == 1 ), and combine a list with 1, the resultant. Lastly, converting it to list, getting
 
     [1 , 4]
 
@@ -79,7 +79,7 @@ According to Rule 4, then fill 4 one time ( expectedLength == 2 and len(src) == 
 ### Output
     [1, 5]
 ### Explanation
-According to Rule 3, not fill anything, getting
+According to Rule 3, does not fill anything, getting
 
     [1 , 5]
     
@@ -98,3 +98,68 @@ According to Rule 3, not fill anything, getting
 According to Rule 4, 4 will be filled two times and converts it to list, getting
 
     [4,4]
+    
+### Example 5
+### Code
+    r = ObjectHandler.Filler.Fill(
+        [ 1 , 3 , 4] ,
+        "list",
+        2,
+        4
+    )
+    print(r)
+### Output
+    [1, 3, 4]
+### Explanation
+According to Rule 3, does not fill anything, getting
+
+    [1, 3, 4]
+    
+### Example 6
+### Code
+    r = ObjectHandler.Filler.Fill(
+        ( 1 , 2 , 3) ,
+        "tuple",
+        2,
+        4
+    )
+    print(r)
+### Output
+    [1, 3, 4]
+### Explanation
+According to Rule 3, does not fill anything, getting
+
+    (1, 2, 3)    
+## API
+### class ObjectHandler()
+#### class Filler()
+##### def Fill()
+Fill the source (named src) with default value (named defaultElem), up to number of expectedLength elem, if neeeded. 
+Then converts it to an expectedType-type object.
+
+For more details, see the above rules.
+
+Syntax :
+        
+        @staticmethod
+        def Fill(
+                src : ( None | list | tuple ),
+                expectedType : str ,
+                expectedLength : int ,        
+                defaultElem
+        ):
+
+Parameter :
+
+1. src : source.
+2. expectedType : must be a string that one of these: "list","tuple". It indicates the type that resultant will be converted to.
+3. expectedLength : must be a positive integer. It indicates the expected length of returned value (if fill is required. See above rules.)
+4. defaultElem : the element that is filled for.
+
+Returned value :
+
+returns resultant after filling.
+
+## Release Notes
+### 2023/10/07 16:19 
+Initial Notes
