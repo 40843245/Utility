@@ -9,7 +9,7 @@ class ObjectHandler():
         ):
             if expectedLength <= 0 :
                 raise Exception("The expected number of element ( named expectedLength ) must be a positive integer.")
-            if not expectedType in ["list","tuple","set"]:
+            if not expectedType in ["list","tuple"]:
                 raise Exception("The expected type ( named expectedType ) must be either following type:\n" +
                                 "list,"+"tuple")
             expectedTypeMap = { 
