@@ -21,5 +21,26 @@ And there are several buttons.
 2. set all items from listWidgetHandler[0].listWidget and clone it to listWidgetHandler[1].listWidget at end.
 3. remove selected items from it to listWidgetHandler[1].listWidget.
 4. remove all items from it to listWidgetHandler[1].listWidget.
-#$
+
+## Used Modules:
+For modules about handlers of TableView,
+
+    QTableViewHandler
+
+For modules about handlers of a istView,
+
+    QListViewHandler
+
+
+For modules about handles of visit directory,
+
+    DirectoryHandler
+
+For moudles about Microsoft Office of Search and Replace,
+    
+    OfficeFilesHandler
+    
+## Release Notes   
+### 2023/10/07 7:31
+Initial Notes.
 
