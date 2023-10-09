@@ -19,23 +19,23 @@ import QMessageBoxHandler
 import OfficeFilesHandler
 
 class FileHandler():
+    """
+    Intro :
+        Manipulates lots of files in the given QListView object.
+    Parameter :
+        listView : QListView
+            src
+        searchText : 
+            text to search.
+        replaceText : str
+            text to replace.
+        replaceFlag : bool
+            Replace text iff replaceFlag is True. Otherwise, Search text iff replaceFlag is False.
+    Returned Value:
+        None
+    """
     @staticmethod
     def HandlesManyFiles( listView : QListView , searchText : str , replaceText : str , replaceFlag : bool ):
-        """
-        Parameters
-        ----------
-        listView : QListView
-            DESCRIPTION.
-        searchText : str
-            DESCRIPTION.
-        replaceText : str
-            DESCRIPTION.
-        replaceFlag : bool
-            DESCRIPTION.
-        Returns
-        -------
-        None.
-        """
         if listView == None or listView.count() <= 0 :
             raise Exception("listView must be niether None nor empty.")
         #
@@ -51,11 +51,8 @@ class FileHandler():
             fullname = listView.item(i).clone().text()
             if replaceFlag == False:
                 r = OfficeFilesHandler.OfficeFilesHandler.SearchAll(fullname, searchText)
-                print(r)
             elif replaceFlag == True:
                 r = OfficeFilesHandler.OfficeFilesHandler.ReplaceAll(fullname, searchText,replaceText)
-                print(r)
-                
                 
 """
 A class that check items of QListWidget.
@@ -140,6 +137,10 @@ class InsertionItemsHandler():
                 for i in range(0,len(itemsIndex),1):
                     itemsIndex[i] += 1
         CheckHandler.Duplication.RemoveDuplication(dest)
+        
+"""
+A class that inserts a list of item from dest.
+"""  
 class RemovalListHandler():
     @staticmethod
     def RemoveRows(dest:QListWidget,items:list[QListWidgetItem | str]):
@@ -226,6 +227,9 @@ class QListWidgetItemHandler():
         self.row = row
         self.text = text
 
+"""
+A subclass of class QListWidgetHandler (a class that handles QListWidget)
+"""  
 class QListWidgetSubHandler():
     def __init__(self):
         self.listWidget = QListWidget()    
@@ -267,11 +271,9 @@ A class that handles QListWidget.
 class QListWidgetHandler(QListWidgetSubHandler):
     def __init__(self):
         super().__init__()
-    
-   
-    
+     
 """
-A main class about Widget .
+A main class about Widget.
 """  
 class Widget(QWidget):
     def __init__(self,parent = None):
