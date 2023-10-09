@@ -19,3 +19,7 @@ Parameter :
 Returned Value :
 
 Returns True iff src ends with any elem of target. Otherwise, returns False.
+
+## Release Notes
+### 2023/10/09 11:01
+Initial Notes.
