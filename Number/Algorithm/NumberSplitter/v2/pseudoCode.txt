@@ -1,0 +1,25 @@
+# Pseudo Code
+## Use GetMaxProduct1 to get expected result. NOT GetMaxProduct2
+
+function GetMaxProduct1(n : n must be positive integer):
+    # When n is in 1 to 3, it is an exception.
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    if n == 3:
+        return 2
+    return GetMaxProduct2(n)
+function GetMaxProduct2(n : n must be positive integer and n >= 4):
+    tempProduct := 1 
+    maxProduct := -1
+    for j from 4 to n step 1:
+        # Recursion.
+        # DO NOT use GetMaxProduct2 since there is an exception.
+        tempProduct := GetMaxProduct1(j) * GetMaxProduct1(n-j)
+        # Update max value
+        if tempProduct > maxProduct :
+            tempProduct = maxProduct
+    # Find the max of maxProduct and n.
+    r := max(maxProduct,n)
+    return r
