@@ -174,3 +174,8 @@ Returned Value :
 ## Release Notes
 ### 2023/10/10 10:21
 Initial Notes.
+### 2023/10/10 12:00
+Added some files.
+
+    psuedoCode.txt
+    idea.odt
