@@ -1,0 +1,14 @@
+# Pseudo Code (v3)
+function GetMaxProduct1(n : n must be a positive integer):
+    tempProduct := 1 
+    maxProduct := -1
+    if n == 0:
+        return 1
+    for j from 0 to (n//2) step 1:
+        # Recursion.
+        tempProduct := GetMaxProduct1(j) * GetMaxProduct1(n-j)
+        # Update max value
+        if tempProduct > maxProduct :
+            tempProduct = maxProduct
+        maxProduct = max{ maxProduct , n }
+    return r
