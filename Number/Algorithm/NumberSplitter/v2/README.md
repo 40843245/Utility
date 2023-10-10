@@ -1,5 +1,11 @@
 # NumberSplitter (2th version)
 ## Preface
+To see the introduction of question. See the images in GitHub. 
+
+https://github.com/40843245/Utility/tree/main/Number/Algorithm/NumberSplitter/v2
+
+To see ideas what I came up with it and how it works. See the process.docx which available in 
+
 ### NOTICE
 I had found unexpected output with code of version 1 ( in ../v1/ directory).
 
