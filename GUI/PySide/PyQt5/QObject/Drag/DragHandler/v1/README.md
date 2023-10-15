@@ -34,4 +34,34 @@ Returned Value :
 
     None
 
-    
+### class KeyPressEater():
+#### Inherits 
+QObject 
+#### def eventFilter()
+
+NOTICE that 
+
+the method overrides QObject.eventFilter.
+
+Syntax :
+
+    def eventFilter(self, obj : QObject ,event : QEvent)
+
+Parameter :
+
+1. obj : must be a QObject. Indicates the QObject that is handled.
+2. event : must be a QEvent. Indicates the type of event that is handled.
+
+Returned Value :
+
+    Returns a bool value. Indicates whether to continue to filter it out. Returning True indicates that stop it being handled further. 
+
+    Otherwise (i.e. Returning False) indicates that continue it being handled further.
+
+For more details, see the website in See Also section.
+
+##### See Also
+
+Qt Official Website :
+
+https://doc.qt.io/qt-6/qobject.html#eventFilter
