@@ -35,8 +35,14 @@ Returned Value :
     None
 
 ### class KeyPressEater():
-#### Inherits 
-QObject 
+NOTICE that 
+
+it inherits QObject class.
+
+The syntax of class definition is :
+
+    class KeyPressEater(QObject):
+    
 #### def eventFilter()
 
 NOTICE that 
@@ -65,3 +71,27 @@ For more details, see the website in See Also section.
 Qt Official Website :
 
 https://doc.qt.io/qt-6/qobject.html#eventFilter
+
+#### def DragByCursor()
+
+Updates the variable about cursor ( such as self.oldCursorPos and self.newCursorPos ) and set the geometry of QObject self.pressedObj.
+
+NOTICE that 
+
+it will invoke the method (my own developed) DragHandler.SetGeometry.
+
+Syntax : 
+    
+    def DragByCursor(self):
+
+Parameter :
+
+    None
+
+Returned Value :
+
+    None
+
+## Release Notes
+### 2023/10/15 19:06
+Initial Notes.
