@@ -92,6 +92,26 @@ Returned Value :
 
     None
 
+## NOTICE 
+NOTICE that
+
+To use the eventFilter method, 
+
+first, instantiate the KeyPressEater (which defined in 1th of code, see the See Also section) by 
+
+    self.keyPressEater = KeyPressEater()
+
+next, invoke the method installEventFilter of a QObject object (or its subclass object).
+
+such as 
+
+    lineEdit = QLineEdit()
+    
+    lineEdit.installEventFilter(self.keyPressEater)
+
+For more details, see the 1th version of code. 
+
+### See Also
 ## Release Notes
 ### 2023/10/15 19:06
 Initial Notes.
