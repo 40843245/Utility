@@ -12,6 +12,15 @@ And a simpler code at GitHub :
 
     ../DragHandler/v1/Code/DragHandler.py
 
+## Known Issues
+1. Many QObject can be on same y axis since I implement it by QLayout.
+
+## Newer version
+It is fixed in newer version.
+
 ## Release Notes
 ### 2023/10/16 13:39
 Initial Notes.
+### 2023/10/16 15:02
+Add Known Issues , update newer version.
+
