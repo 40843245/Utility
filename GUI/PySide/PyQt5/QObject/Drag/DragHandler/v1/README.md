@@ -137,6 +137,14 @@ Demo video :
 
 https://youtu.be/eGwXALVloTk
 
+## Known issues
+1. Many QObjects can be on same y axis since it is implemented by QLayout.
+   
+## Newer version
+Known issues are available at latest version in DragHandler/OtherWindow/
 ## Release Notes
 ### 2023/10/15 19:15
 Initial Notes.
+### 2023/10/16 15:06
+Added Known issues and update newer version.
+
