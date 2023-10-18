@@ -10,6 +10,9 @@ Examples with NestedFlatter.Flat .
     items = [ [1,2,3] ,['a','b','c']]
 #### Output
     ['1' '2' '3' 'a' 'b' 'c']
+### Example 2 (Example with error due to inhomogeneous shape)
+#### Input
+     [ [ [1,2,3] ,['a','b','c'] ] , ['q','w','e'] ]
 
 ## Used Modules
     numpy
@@ -31,3 +34,5 @@ For more examples, see previous examples in 1th version.
 Initial Notes.
 ### 2023/10/18 20:50
 Update the code (for latest code, see ../v2/Code/NestedFlatter.py)
+### 2023/10/18 21:02
+Update the examples of 1th version.
