@@ -1,4 +1,4 @@
-# ClassParser_v4 (4th version of ClassParser)
+# ClassParser.py (4th version of ClassParser)
 ## Examples
 ### Example 1 (for top-level class) (bug example)
 #### Statement
