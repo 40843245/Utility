@@ -1,4 +1,4 @@
-# ClassParser_v3 ( 3th version of ClassParser )
+# ClassParser.py ( 3th version of ClassParser )
 ## Examples
 ### Example1 
 #### Input Class
