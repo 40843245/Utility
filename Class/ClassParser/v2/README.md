@@ -1,4 +1,4 @@
-# ClassParser_v2 (2th version of ClassParser)
+# ClassParser.py (2th version of ClassParser)
 ## Change
 ### Fix 
 1. The useless argument ( it is shown in the 3th point of known issue in ../ClassParser/README.md ) .
