@@ -1,4 +1,4 @@
-# ClassParser_v5 (5th version of ClassParser)
+# ClassParser_v (5th version of ClassParser)
 ## Preface
 The code of classParser_v5 is very similar to ../ClassParser_v4/Code/ClassParser_v4.py .
 
