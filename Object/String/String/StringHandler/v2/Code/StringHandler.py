@@ -16,12 +16,12 @@ class StringHandler():
     
     """
     Intro:
-        Get the how many occurences of prefix (which is given in ) in given string (which given in s).
+        Get the how many occurences of suffix (which is given in ) in given string (which given in s).
     Parameter:
         s: given string as target.
         keyword: keyword for counting the occurences.
     Returned Value:
-        Returns a nonnegative integer that indicates how many occurences of prefix (which is given in ) in given string (which given in s).
+        Returns a nonnegative integer that indicates how many occurences of suffix (which is given in ) in given string (which given in s).
     """
     @staticmethod
     def GetSuffixCount(s:str,keyword:str):
