@@ -1,6 +1,7 @@
-# ElemHandler (1th version)
+# ElemHandler (all version)
 ## Objective
-1. Handles a list or a tuple. ( only check duplicate elem )
+1. Handles a list or a tuple.
+# v1
 ## Example
 ### Example 1
 #### Input
@@ -56,6 +57,17 @@ Returned Value :
 
 Returns True iff they have duplicated elem. Otherwise, returns False.
 
+# v2
+## Examples
+### Example 1
+#### Input
+See ../v2/Examples/Example1/Input
+#### Output
+See ../v2/Examples/Example1/Output
+
 ## Release Notes
 ### 2023/10/08 8:55
 Initial Notes
+### 2023/10/28 17:55
+Upload the 2th version.
+
