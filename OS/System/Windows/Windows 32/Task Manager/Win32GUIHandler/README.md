@@ -6,6 +6,9 @@
 ## API
 See the comments in code in v2. Located at ../v2/Code/Win32GUIHandler.py .
 
+# v2
+All codes are same in v1 except that add comments.
+
 # Used Modules
     win32gui
 
@@ -27,5 +30,8 @@ it provides a useful module win32gui. I modified the code from it.
 
 
 # Release Notes
-## 2023/11/15 11:26 p.m.
+## 2023/11/15 11:26 a.m.
 Initial Notes.
+
+## 2023/11/15 11:28 a.m.
+Update 2th code.
